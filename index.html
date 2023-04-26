@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsiveness</title>
+    <style>
+        .parent{
+            width: 70%;
+            margin: auto;
+            align-items: center;
+            display: flex;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            gap: 2rem;
+        }
+        .heading{
+            text-transform: capitalize;
+            font-size: 1.5rem;
+        }
+        .info{
+            color: gray;
+            text-align: justify;
+        }
+        .title-section{
+            width: 50%;
+        }
+
+        .cards{
+            display: flex;
+            gap: 1rem;
+            width: 100%;
+            margin: auto;
+            /* padding: 1rem; */
+        }
+
+        .card{
+            box-shadow: 6px 6px 12px 3px gray;
+            padding: 1rem;
+            display: flex;
+            gap: 3.6rem;
+            align-items: center;
+            /* justify-items: center; */
+            /* padding-right: 6px; */
+        }
+
+        .card-image img{
+            /* clip-path: circle(); */
+            width: 130%;
+            /* border-radius: 50%; */
+            /* padding-right: 0; */
+            /* padding-right: 9px; */
+        }
+
+        @media only screen and (max-width:600px){
+            .parent{
+                flex-direction: column;
+                width: 90%;
+            }
+            .title-section{
+                width: 100%;
+            }
+            .heading{
+                text-align: center;
+            }
+
+            .cards{
+                flex-direction: column;
+                width: 90%;
+                margin: auto;
+                gap: 1rem;
+            }
+
+            .card-image img{
+                clip-path: none;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="parent">
+    <div class="title-section">
+        <div class="heading">
+            <h1>This is a heading</h1>
+        </div>
+        <div class="info">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil adipisci iste eveniet rem dolorem in vitae impedit sequi. Accusamus vitae provident eaque esse illum quod atque sequi repellendus doloremque voluptatum incidunt, necessitatibus dicta possimus fugit quas nisi amet totam iusto.</p>
+        </div>
+        <div class="button">
+            <button>this is a  button</button>
+            <button>this is a  button</button>
+        </div>
+    </div>
+    <div class="image-section">
+        <img width="100%" src="https://img.freepik.com/free-vector/flat-computer-engineering-concept_23-2148152150.jpg?size=626&ext=jpg&ga=GA1.1.248155838.1682326548&semt=robertav1_2_sidr" alt="">
+    </div>
+</div>
+
+<div class="cards">
+    <div class="card">
+    <div class="card-image">
+        <img width="100%" src="https://img.freepik.com/premium-vector/programmer-working-program-web-developer-coding-computer-screen-with-code-script-open-windows-coder-engineer-vector-concept-illustration-development-programmer-programming-coding_102902-3910.jpg?size=626&ext=jpg&ga=GA1.1.248155838.1682326548&semt=robertav1_2_sidr" alt="">
+    </div>
+        <div class="card-title">
+            <h3>this is card title</h3>
+        
+            <div class="card-info">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate accusantium cupiditate dignissimos, exercitationem asperiores recusandae sequi sunt modi quia eveniet autem non voluptatem molestiae in repellat dolorum sed! Sequi, unde.</p>
+            </div>
+        </div>
+    </div>
+    <div class="card">
+    <div class="card-image">
+        <img width= 100%" src="https://img.freepik.com/premium-vector/programmer-working-program-web-developer-coding-computer-screen-with-code-script-open-windows-coder-engineer-vector-concept-illustration-development-programmer-programming-coding_102902-3910.jpg?size=626&ext=jpg&ga=GA1.1.248155838.1682326548&semt=robertav1_2_sidr" alt="">
+    </div>
+        <div class="card-title">
+            <h3>this is card title</h3>
+        
+            <div class="card-info">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate accusantium cupiditate dignissimos, exercitationem asperiores recusandae sequi sunt modi quia eveniet autem non voluptatem molestiae in repellat dolorum sed! Sequi, unde.</p>
+            </div>
+        </div>
+    </div>
+    <div class="card">
+    <div class="card-image">
+        <img width="100%" src="https://img.freepik.com/premium-vector/programmer-working-program-web-developer-coding-computer-screen-with-code-script-open-windows-coder-engineer-vector-concept-illustration-development-programmer-programming-coding_102902-3910.jpg?size=626&ext=jpg&ga=GA1.1.248155838.1682326548&semt=robertav1_2_sidr" alt="">
+    </div>
+        <div class="card-title">
+            <h3>this is card title</h3>
+        
+            <div class="card-info">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate accusantium cupiditate dignissimos, exercitationem asperiores recusandae sequi sunt modi quia eveniet autem non voluptatem molestiae in repellat dolorum sed! Sequi, unde.</p>
+            </div>
+        </div>
+        
+    </div>
+</div>
+</body>
+</html>
